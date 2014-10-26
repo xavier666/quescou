@@ -1,0 +1,21 @@
+<ion-view title="QuesCou" id="page_posts">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="posts">
+      <ion-item ng-repeat="post in posts track by $index" href="#/app/posts/{{post.id}}">
+        <div class="separador"></div>
+        <div class="detalle">
+          <div style="background:url({{post.imagen}})" class="imagen crop"></div>
+          <div class="gris">
+            <div class="blanc">
+              <div ng-if="post.titulo" class="titulo"><pre>{{post.titulo}}</pre></div>
+              <div ng-if="post.fecha_descripcion" class="fecha"><pre>{{post.fecha_descripcion}}</pre></div>
+              <div ng-if="post.comarca" class="comarca"><pre>{{post.comarca}}, {{post.poblacion}}</pre></div>
+            </div>
+          </div>
+        </div>
+      </ion-item>
+  </ion-content>
+</ion-view>
+

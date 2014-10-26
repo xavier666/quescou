@@ -1,0 +1,32 @@
+<ion-view title="QuesCou">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content class="post has-footer">
+        <ion-item ng-repeat="post in posts track by $index">
+            <div class="imagen">
+                <img src="{{post.imagen}}"/>
+                <div ng-if="post.titulo" class="titulo"><pre>{{post.titulo}}</pre></div>
+            </div>
+            <div class="info">
+                <div ng-if="post.fecha_descripcion" class="fecha"><pre>{{post.fecha_descripcion}}</pre></div>
+                <div ng-if="post.comarca" class="comarca">{{post.comarca}}</pre></div>
+                <div ng-if="post.descripcion" class="label">Detalls:</div>
+                <div ng-if="post.descripcion" class="text descripcion"><pre>{{post.descripcion}}</pre></div>
+                <div ng-if="post.poblacion || post.lugar || post.direccion" class="label">Adreça:</div>
+                <div ng-if="post.lugar" class="text"><pre>{{post.poblacion}} - {{post.lugar}}</pre></div>
+                <div ng-if="post.direccion" class="text"><pre>{{post.direccion}}</pre></div>
+                <div ng-if="post.horario" class="label">Horari:</div>
+                <div ng-if="post.horario" class="text"><pre>{{post.horario}}</pre></div>
+                <div ng-if="post.entradas" class="label">Entrades:</div>
+                <div ng-if="post.entradas" class="text"><pre>{{post.entradas}}</pre></div>
+                <!--<div ng-if="post.url" class="text url">
+                    <a ng-if="post.url" data-url="{{data.url}}" class="ui-link">Més Informació</a>
+                </div>-->
+            </div>
+        </ion-item>
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar-dark" ng-controller="AppCtrl">
+        <button class="button" ng-click="back()"><i class="icon ion-ios7-arrow-back"></i></button>
+    </ion-footer-bar>
+</ion-view>

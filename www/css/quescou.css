@@ -1,0 +1,319 @@
+/* general */
+body, ion-nav-view{
+	color: #fff;
+  	cursor: url('http://ionicframework.com/img/finger.png'), auto;
+    background-color: #000 !important;
+}
+
+h1{
+	color: #fff;
+	font-weight: bold;
+	font-size: 34px;
+}
+a{
+	color: #00C2FF;
+}
+pre{
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+/* general */
+/* title and header */
+h1.title{
+	font-family: Lobster Two;
+/*	margin: 22px 0px 0px 0px !important;
+	padding: 0px;
+	text-align: left;
+	color: #fff !important;
+	text-shadow: none;
+	text-align: center;
+	width: 100%;
+	background-color: #000;*/
+}
+
+.bar .title{
+/*	margin: 0px !important;
+	left: 0px !important;
+	right: 0px !important;
+*/
+	font-size: 170% !important;
+}
+.bar-stable .button, .bar-stable .button:hover{
+	color: #fff;
+}
+/* title and header */
+/* left side */
+ion-side-menu ion-content{
+	background-color: #000;
+}
+ion-side-menu .item-complex .item-content{
+	background-color: #000;
+	color: #fff;
+}
+ion-side-menu .item{
+	border: 0px;	
+}
+/* left side */
+/* content */
+ion-content{
+	padding: 0px 10px;
+	background-color: #303031;
+}
+ion-side-menu ion-content{
+	padding: 0px;
+}
+/* content */
+
+/* posts */
+/* post_home */
+
+.posts .separador{
+	float:left;
+	width: 100%;
+	height: 10px;
+	border-left: 10px solid #303031;
+	border-right: 10px solid #303031;
+}
+.posts .item{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	margin-bottom: 10px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.posts .item-complex .item-content{
+	padding: 0px;
+}
+.posts #content p.no_registers{
+	padding: 0px 10px;
+}	
+.posts .detalle{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 100%;
+}
+.posts .imagen{
+	padding-left: -10px;
+	margin-right: -10px;
+	height: 150px;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-size: 100% !important;
+	/* efecto transition */
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+.posts .imagen:active{
+	opacity: 0.6;
+}
+.posts .imagen img{
+	width: 100%;
+}
+.posts .descripcion{
+	font-size: 80%;
+	/* efecto transition */
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+.posts .descripcion:active{
+	opacity: 0.6;
+}
+.posts .gris{
+	color: #000;
+	background-color: #303031;
+	float: left;
+	width: 100%;
+	padding: 0px 10px;
+}
+.posts .blanc{
+	background-color: #fff;
+	float: left;
+	width: 100%;
+}
+.posts .blanc div{
+	padding: 5px 10px;
+}
+.posts .titulo{
+	font-weight: bold;
+	font-size: 18px;
+	color: #000;
+	width: 100%;
+	float: left;
+	display: inline-block;
+	white-space: pre;
+}
+.posts .fecha{
+	background-image: url(img/reloj_negro.png);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	padding-left: 30px !important;
+	float: left;
+	width: 100%;
+}
+.posts .comarca{
+	padding: 5px 5px;
+	background-color: #fff;
+	float: left;
+	width: 100%;
+}
+/* post_home */
+
+/* detallePost */
+.post{
+	color: #fff !important;
+	background-color: #303031;
+	float: left;
+	padding: 0px;
+}
+.post .item{
+	margin: 0px;
+	padding: 0px;
+}
+.post .imagen{
+	position: relative;
+	text-align: center;
+	padding: 0px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.post .imagen img{
+	width: 100%;
+}
+.post .titulo{
+	opacity: 0.6;
+	background-color: #000;
+	font-size: 20px;
+	padding: 24px;
+	white-space: pre;
+	width: 100%;
+	float: left;
+	margin-top: -4px;
+	position: relative;
+}
+.post .info{
+	float: left;
+	margin: 16px;
+	background-color: #303031;
+}
+.post .fecha{
+	background-image: url(img/reloj_blanco.png);
+	background-position: center left;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	padding: 5px 0px;
+	padding-left: 26px;	
+}
+
+.post .comarca{
+	padding: 5px 0px;
+}
+.post .descripcion{
+	white-space: pre;
+	float: left;
+	width: 100%;
+}
+.post .label{
+	padding: 10px 0px;
+	font-style: italic;
+	padding-bottom: 0px;
+	float: left;
+	width: 100%;
+	position: relative;
+	opacity: 0.4;
+}
+.post .text{
+	padding: 0px;
+	float: left;
+	width: 100%;
+	position: relative;
+}	
+
+.post .url{
+	line-height: 130%;
+	margin-top: 8px;
+	margin-bottom: 6px;
+	color: #00C2FF;
+}
+/* detallePost */
+
+/* padding content */
+#about #content, #condicions #content, #comarca #content{
+	padding: 0px 20px;
+}
+/* padding content */
+
+
+/*intro*/
+.slider button{
+	background-color: transparent;
+	color: #fff;
+	font-weight: bold;
+}
+.slider button:hover{
+	color: #000;
+	border-color: #000;
+}
+.slider {
+  height: 100%;
+}
+.slide{
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+}
+.slide1{
+	background-image: url("img/slide1.jpg");
+}
+.slide2{
+	background-image: url("img/slide2.jpg");
+}
+.slide3{
+	background-image: url("img/slide3.jpg");
+}
+.slide4{
+	background-image: url("img/slide4.jpg");
+}
+.slider-slide {
+  border: 0px;
+  padding: 0px;
+}
+.slider-slide img{
+	width: 100%;
+	margin: auto auto;
+}
+#logo {
+  margin: 30px 0px;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.saltar_intro{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.slider .slider-pager .slider-pager-page{
+	color: #fff;
+}
+/*intro*/

@@ -1,0 +1,16 @@
+<ion-view title="Quescou">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ul class="list">
+      <ion-checkbox ng-repeat="item in CategoriesList"
+                    ng-model="item.checked"
+                    ng-checked="item.checked"
+                    ng-value="item.value"
+                    ng-change="check_categoria()">
+                {{ item.text }}
+      </ion-checkbox>
+    </ul>    
+  </ion-content>
+</ion-view>
